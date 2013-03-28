@@ -3,6 +3,8 @@
 >An Awesome Chat Site for your Awesome Team, Event or LOL eaters.
 
 ##Install
+
+First install Node.JS as instructed here -> https://github.com/joyent/node/wiki/Installation
 ```
 git clone https://github.com/hackergarage/osomtalk.git
 cd osomtalk
