@@ -231,7 +231,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #f02475;
+  background-color: #ffffff;
 }
 
 a {
@@ -2041,7 +2041,7 @@ table {
 }
 
 .table .table {
-  background-color: #f02475;
+  background-color: #ffffff;
 }
 
 .table-condensed th,
@@ -4080,7 +4080,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:focus {
   color: #555555;
   cursor: default;
-  background-color: #f02475;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
