@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
 /*!
  * Bootstrap v2.3.1
  *
@@ -223,11 +227,11 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f02475;
 }
 
 a {
@@ -739,7 +743,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: inherit;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: bold;
   line-height: 20px;
   color: inherit;
@@ -1065,7 +1069,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Arial, sans-serif;
 }
 
 label {
@@ -2037,7 +2041,7 @@ table {
 }
 
 .table .table {
-  background-color: #ffffff;
+  background-color: #f02475;
 }
 
 .table-condensed th,
@@ -3351,17 +3355,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006dcc;
-  *background-color: #0044cc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-color: #d11a63;
+  *background-color: #a30b47;
+  background-image: -moz-linear-gradient(top, #f02475, #a30b47);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f02475), to(#a30b47));
+  background-image: -webkit-linear-gradient(top, #f02475, #a30b47);
+  background-image: -o-linear-gradient(top, #f02475, #a30b47);
+  background-image: linear-gradient(to bottom, #f02475, #a30b47);
   background-repeat: repeat-x;
-  border-color: #0044cc #0044cc #002a80;
+  border-color: #a30b47 #a30b47 #5b0628;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff02475', endColorstr='#ffa30b47', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
@@ -3372,13 +3376,13 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #a30b47;
+  *background-color: #8b0a3d;
 }
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #730832 \9;
 }
 
 .btn-warning {
@@ -3761,7 +3765,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc;
+  background-color: #a30b47;
 }
 
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -4076,7 +4080,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:focus {
   color: #555555;
   cursor: default;
-  background-color: #ffffff;
+  background-color: #f02475;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4510,7 +4514,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 14px;
   margin-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
