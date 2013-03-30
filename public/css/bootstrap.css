@@ -230,8 +230,8 @@ body {
   font-family: Ubuntu, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
+  color: #000000;
+  background-color: #eeeeee;
 }
 
 a {
@@ -1652,7 +1652,7 @@ select:focus:invalid:focus {
 
 .help-block,
 .help-inline {
-  color: #595959;
+  color: #262626;
 }
 
 .help-block {
@@ -2041,7 +2041,7 @@ table {
 }
 
 .table .table {
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 
 .table-condensed th,
@@ -4080,7 +4080,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:focus {
   color: #555555;
   cursor: default;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }

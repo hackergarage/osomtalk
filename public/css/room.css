@@ -1,8 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
-
-body {
-	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-}
 .previews{
 	text-align: center;
 }
@@ -11,13 +6,6 @@ body {
 	overflow: hidden;
 	margin:5px;
 }
-/*.navbar .brand a{
-  color: #777777;
-  text-shadow: 0 1px 0 #ffffff;
-}*/
-.navbar .brand a:hover {
-	text-decoration: none;
-	}
 
 .flex-video {
 	position: relative;
@@ -26,9 +14,6 @@ body {
 	height: 0;
 	margin-bottom: 16px;
 	overflow: hidden;
-}
-.message{
-	word-wrap:break-word;
 }
 
 .flex-video.widescreen { padding-bottom: 57.25%; }
@@ -46,9 +31,7 @@ body {
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
 	.flex-video { padding-top: 0; }
 }
-.footer {
-	text-align: center;
-}
+
 h2>img.emoji {
   width:64px;
   height:64px;
@@ -85,57 +68,10 @@ img.emoji {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
-.addthis_toolbox {
-	margin-bottom:2px;
-	text-align:right;
-	width:250px;
-	margin-top:7px;
-	float:right;
-} 
-.marketing div {
-	background: rgba(50,50,50,0.3);
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding:20px 20px 40px 20px;
-	text-align: center;
-}
-
-.marketing div p{
-	padding-top: -5px;
-	padding-bottom: 10px;
-	padding-left: 15px;
-	text-align:left;
-}
-.marketing div h3, .marketing div h4{
-	text-align:left;
-}
-
-.marketing div h3{
-	line-height: 1.0em;
-	font-size: 30px;
-	padding:0px;
-	margin:0px;
-}
-
-.header-img{
-	margin:13px;
-}
-.hero-unit {
-	text-align: center;
-	padding:10px;
-}
-.hero-unit p {
-	line-height: 1.5em;
-}
-
-.hero-unit h1 {
-	color:#ffffff;
-	font-size:50px;
-}
 
 .message {
 	padding:7px;
+    word-wrap:break-word;
 	border-bottom:1px solid #555;
 }
 
@@ -202,11 +138,6 @@ img.emoji {
 	line-height: 1em;
 }
 
-.declaration {
-	font-style: italic;
-	font-size: larger;
-}
-
 .sub_block {
 	margin:10px 0px;
 	padding:5px 10px 5px 10px;
@@ -215,36 +146,7 @@ img.emoji {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
-.smaller{font-size:50%;}
-.founders img{
-	margin-right: 10px;
-	clear:both;
-}
-.founders h3{
-	margin-top:5px;
-	margin-bottom: -5px;
-}
 
-.founders{
-	min-height: 100px;
-}
-
-.founders h3, .founders p{
-	margin-left:110px;
-}
-.contact img {
-	clear:both;
-}
-.contact .span4 {
-	height: 100px;
-}
-.contact h2 {
-	margin-top: 10px;
-	margin-left:105px;
-}
-.contact a {
-	color:white;
-}
 #float_utils{
 	width:90px;
     position:fixed; /* this is the magic */
@@ -321,8 +223,4 @@ img.emoji {
 }
 .outlined {
  /*outline: 1px solid red;*/
-}
-h3.dawrfed {
-	margin-top: -20px;
-	margin-bottom: 0px;
 }
