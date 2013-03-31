@@ -69,7 +69,7 @@
 							$("#" + message_id).find('.oembed').oembed(null,
 							{
 								includeHandle: false,
-								embedMethod: 'fill',
+								embedMethod: 'replace',
 								maxWidth: 500,
 								onProviderNotFound: function() {
 									//$(this).parent().remove();

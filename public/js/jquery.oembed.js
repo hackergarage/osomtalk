@@ -567,7 +567,7 @@
     new $.fn.oembed.OEmbedProvider("visual.ly", "rich", ["visual\\.ly/.+"], null,
       {yql:{xpath:"//a[@id=\\'gc_article_graphic_image\\']/img", from:'htmlstring'}
       }),
-		new $.fn.oembed.OEmbedProvider("gravtar", "photo", ["mailto:.+"],null,
+		new $.fn.oembed.OEmbedProvider("gravatar", "photo", ["mailto:.+"],null,
       {templateRegex:/mailto:([^\/]+).*/ 
       , template : function(wm,email){
         return '<img src="http://gravatar.com/avatar/'+email.md5()+'.jpg" alt="on Gravtar" class="jqoaImg">';
@@ -614,7 +614,11 @@
       templateRegex:/.*\/\/([\w]+).*\/wiki\/([^\/]+).*/,
       templateData : function(data){if(!data.parse)return false;
           var text = data.parse['text']['*'].replace(/href="\/wiki/g,'href="http://en.wikipedia.org/wiki');
-          return  '<div id="content"><h3><a class="nav-link" href="http://en.wikipedia.org/wiki/'+data.parse['displaytitle']+'">'+data.parse['displaytitle']+'</a></h3>'+text+'</div>';
+          var div = document.createElement('div');
+          div.innerHTML = text;
+          text = div.textContent||div.innerText;
+          text = text.substring(0, 255) + "...";
+          return  '<div id="content" class="wikipedia"><h3><a class="nav-link" href="http://en.wikipedia.org/wiki/'+data.parse['displaytitle']+'">'+data.parse['displaytitle']+'</a></h3>'+text+'</div>';
         }
       }),
     new $.fn.oembed.OEmbedProvider("imdb", "rich", ["imdb.com/title/.+"], "http://www.imdbapi.com/?i=$1&callback=?",
