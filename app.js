@@ -61,8 +61,6 @@ app.configure ( function(){
 
 
 	app.use(express.bodyParser());
-	
-	app.use(require('less-middleware')({ src: __dirname + '/public' }));
 	app.use(express.static(path.join(__dirname, 'public')));
 
 	if(appConfig.use_redis) {

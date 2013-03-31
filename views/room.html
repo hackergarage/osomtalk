@@ -17,13 +17,13 @@
 	<script type="text/javascript" src="/js/room_logged_out.js"></script>
 	{{else}}
 	<script>
-		var view_config = {
-			room_id: '${room._id}',
-			short_id: '${room.short_id}',
-			token: '${user.token}',
-			user_id: '${user._id}',
-			is_mobile: ${is_mobile}
-		}
+	var view_config = {
+		room_id: '${room._id}',
+		short_id: '${room.short_id}',
+		token: '${user.token}',
+		user_id: '${user._id}',
+		is_mobile: ${is_mobile}
+	}
 	</script>
 	{{/if}}
 	
@@ -91,8 +91,8 @@
 				</form>
 			</div>
 			{{else}}			
-			<div class="span4">
-				<h3 class="dawrfed outlined">${user.username}</h3>
+			<div class="span4 sidebar">
+				<h3 class="user_username dawrfed">${user.username}</h3>
 				<div id="utility_div">
 					<form class="form-inline">
 						<textarea class="span12" name="message_text" id="message_text" placeholder="Compose your message..." rows="5"></textarea><br/>
@@ -158,29 +158,36 @@
 					</div>
 				</div>
 				{{else}}
-				<ul>
-					<li><small><code>CTRL+ENTER</code> to send your message.</small></li>
-					<li><small>Try some more <a href="#shortcutsModal" role="button" data-toggle="modal">shortcuts</a> to chat like a boss.</small></li>
-					<li><small>Uses <a href="#markdownModal" role="button" data-toggle="modal">Markdown's Syntax</a>.</small></li>
-					<li><small> We Support Emojis, check the <a href="http://www.emoji-cheat-sheet.com/">Emoji Cheat Sheet</a> for reference.</small></li>
-					<li><small>Want to share an image from your computer?, try <a target="_blank" href="http://imgur.com">imgur.com</a>.</small></li>
-				</ul>
-				<div class="group">
-					<label>Notifications:</label>
-					<div id="notifications_button" class="btn-group" data-toggle="buttons-radio">						
-						<button type="button" class="btn btn-small btn-success" value="1">On</button>
-						<button type="button" class="btn btn-small btn-inverse"value="0">Off</button>
+				<div class="help">
+					<h3>Help:</h3>
+					<ul>
+						<li><small><code>CTRL+ENTER</code> to send your message.</small></li>
+						<li><small>Try some more <a href="#shortcutsModal" role="button" data-toggle="modal">shortcuts</a> to chat like a boss.</small></li>
+						<li><small>Uses <a href="#markdownModal" role="button" data-toggle="modal">Markdown's Syntax</a>.</small></li>
+						<li><small> We Support Emojis, check the <a href="http://www.emoji-cheat-sheet.com/">Emoji Cheat Sheet</a> for reference.</small></li>
+						<li><small>Want to share an image from your computer?, try <a target="_blank" href="http://imgur.com">imgur.com</a>.</small></li>
+					</ul>
+				</div>
+				<div class="config">
+					<div class="group">
+						<label>Notifications:</label>
+						<div id="notifications_button" class="btn-group" data-toggle="buttons-radio">						
+							<button type="button" class="btn btn-small btn-success" value="1">On</button>
+							<button type="button" class="btn btn-small btn-inverse"value="0">Off</button>
+						</div>
+					</div>
+					<div class="group">
+						<label>Media:</label>
+						<div id="previews_button" class="btn-group" data-toggle="buttons-radio">
+							<button type="button" class="btn btn-small btn-success" value="1">On</button>
+							<button type="button" class="btn btn-small btn-inverse" value="0">Off</button>
+						</div>
 					</div>
 				</div>
-				<div class="group">
-					<label>Media:</label>
-					<div id="previews_button" class="btn-group" data-toggle="buttons-radio">
-						<button type="button" class="btn btn-small btn-success" value="1">On</button>
-						<button type="button" class="btn btn-small btn-inverse" value="0">Off</button>
-					</div>
+				<div class="connected">
+					<h3>Connected Users</h3>
+					<div id="users"></div>
 				</div>
-				<h3>Connected Users</h3>
-				<div id="users"></div>
 				{{/if}}
 			</div>
 			<div class="span8 messages_container">
@@ -190,13 +197,12 @@
 			</div>
 			{{/if}}
 		</div>
-		<hr/>
-		<div class="row footer">
-			OsomTalk is an <a href="http://www.gnu.org/philosophy/free-sw.html" title="FreeSoftware Fundation">FreeSoftware</a> project availabe as <a href="http://en.wikipedia.org/wiki/Software_as_a_service" title="Wikipedia's definition">SaaS</a> made at <a href="http://hackergarage.mx/" title="HackerGarage Home Page">HackerGarage</a>.<br/>
-
-			<a href="https://github.com/hackergarage/osomtalk" title="OsomTalk Code Repository">Get The Source!</a>
-		</div>
 	</div><!--Container -->
+
+	<div class="footer">
+		OsomTalk is an <a href="http://www.gnu.org/philosophy/free-sw.html" title="FreeSoftware Fundation">FreeSoftware</a> project availabe as <a href="http://en.wikipedia.org/wiki/Software_as_a_service" title="Wikipedia's definition">SaaS</a> made at <a href="http://hackergarage.mx/" title="HackerGarage Home Page">HackerGarage</a>.<br/>
+		<a href="https://github.com/hackergarage/osomtalk" title="OsomTalk Code Repository">Get The Source!</a>
+	</div>
 
 	<!-- Shortcut Modal -->
 	<div id="shortcutsModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -228,9 +234,9 @@
 		</div>
 		<div class="modal-body">
 			<p><strong>OsomTalk</strong> uses what is called Markdown, a way of write your messages that will automagically turn into text with rich format once it's shown in the TimeLine.</p>
-			
+
 			<p>Here you can see an example of the supported Markdown Syntax so you can start playing with it.</p>
-			
+
 			<pre>
 				# You can Put a big header,
 				## a medium header
@@ -299,14 +305,14 @@
 		<script type="text/javascript" src="/js/marked.js"></script>
 		<script type="text/javascript" src="/js/keymaster.min.js"></script>	
 		{{/if}}
-		
+
 		<!-- Our Libraries -->
 		<script type="text/javascript" src="/js/frontend_config.js"></script>
 		{{if user !== false }}
 		<script type="text/javascript" src="/js/room.js"></script>
 		<script type="text/javascript" src="/js/engine.js"></script>
 		{{/if}}
-		
+
 		{{html ANALYTICS}}
 	</body>
 	</html>

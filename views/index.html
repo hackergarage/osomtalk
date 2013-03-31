@@ -6,17 +6,17 @@
 	<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-			
-			$('#newChatModal').on('shown', function () {
-  				$('#name').focus();
-			});
+		
+		$('#newChatModal').on('shown', function () {
+			$('#name').focus();
+		});
 
-			$('#name').bind('keypress', function(e) {
-				if (e.keyCode == 13) {
-					createChat();
-					e.preventDefault();
-				}
-			});
+		$('#name').bind('keypress', function(e) {
+			if (e.keyCode == 13) {
+				createChat();
+				e.preventDefault();
+			}
+		});
 
 	});
 	function createChat() {
@@ -107,14 +107,12 @@
 				<a href="#enterpriseModal" role="button" class="btn btn-large btn-info" data-toggle="modal">Create Enterprise Account!</a>
 			</div>
 		</div>
-		<hr/>
-		<div class="row footer">
-			OsomTalk is an <a href="http://www.gnu.org/philosophy/free-sw.html" title="FreeSoftware Fundation">FreeSoftware</a> project availabe as <a href="http://en.wikipedia.org/wiki/Software_as_a_service" title="Wikipedia's definition">SaaS</a> made at <a href="http://hackergarage.mx/" title="HackerGarage Home Page">HackerGarage</a>.<br/>
-
-			<a href="https://github.com/hackergarage/osomtalk" title="OsomTalk Code Repository">Get The Source!</a>
-		</div>
 	</div><!--Container -->
+	<div class="footer">
+		OsomTalk is an <a href="http://www.gnu.org/philosophy/free-sw.html" title="FreeSoftware Fundation">FreeSoftware</a> project availabe as <a href="http://en.wikipedia.org/wiki/Software_as_a_service" title="Wikipedia's definition">SaaS</a> made at <a href="http://hackergarage.mx/" title="HackerGarage Home Page">HackerGarage</a>.<br/>
 
+		<a href="https://github.com/hackergarage/osomtalk" title="OsomTalk Code Repository">Get The Source!</a>
+	</div>
 
 	<!-- Create Chat Modal -->
 	<div id="newChatModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
